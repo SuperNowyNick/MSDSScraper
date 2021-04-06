@@ -315,7 +315,7 @@ def main(argv):
 	print("".join([str(len(notfound)), " compounds not found."]))
 	with open("notfound.csv", "w") as exportfile:
 		for cas in notfound:
-			print("\""+cas+"\"", file=exportfile)
+			print("\""+cas[0]+"\"", file=exportfile)
 	
 
 		
